@@ -1,0 +1,57 @@
+body 
+{
+    font-family: 'Special Elite', cursive;
+    background: lightpink;
+}
+
+.header_div
+{
+    background: white;
+    color: red;
+}
+
+.header_div img
+{
+    width: 120px;
+}
+
+.text_image_result
+{
+    text-align: left;
+    padding-top: 200px;
+}
+
+.footer_div
+{
+    margin-bottom: 50px;
+}
+
+.footer_div h4
+{
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 18px white;
+}
+
+.footer_div img
+{
+    width: 70px;
+}
+
+.copy_right_footer
+{
+    position: fixed;
+    color: goldenrod;
+    bottom: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    line-height: 3;
+    text-align: center;
+}
+
+.img-responsive
+{
+    width: 300px;
+    height: 300px;
+}

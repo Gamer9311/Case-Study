@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Case Study App ML
+        </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+
+        </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+
+        </script>
+
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js">
+
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js">
+
+        </script>
+
+        <link rel="stylesheet" href="style.css"
+    </head>
+
+    <body>
+        <center>
+            <div class="col-sm-6 col-xs-12 header_div">
+                <h1>
+                    Case Study ML
+
+                    <img src="logo.gif">
+                </h1>
+            </div>
+
+            <ol>
+                <div class="text_image_result">
+                    <li>
+                        <b>
+                            Test Image - 
+                        </b>
+
+                        <img src="bottle.jpg" class="img-responsive">
+                        <h2>BOTTLE</h2>
+                    </li>
+
+                    <h5>
+                        Output on 
+
+                        <b>
+                            Google Images
+                        </b>
+
+                        -
+
+                        <span>
+                            Cylinder
+                        </span>
+                    </h5>
+
+                    <h5>
+                        Output on 
+
+                        <b>
+                            Mobilenet Model
+                        </b>
+                        - 
+                        <span>
+                            Water Bottle
+                        </span>
+                    </h5>
+
+                    <div class="result">
+                        <h4>
+                            Result - 
+
+                            <span>
+                                <b>MOBILENET </b>
+
+                                is more accurate than
+
+                                <b> Google Images</b>
+                            </span>
+                        </h4>
+
+                    </div>
+
+                    <br>
+
+                    <li>
+                        <b>
+                            Test Image - 
+                        </b>
+
+                        <img src="tape.jpg" class="img-responsive">
+                        <h2>Tape</h2>
+                    </li>
+
+                    <h5>
+                        Output on 
+
+                        <b>
+                            Google Images
+                        </b>
+
+                        -
+
+                        <span>
+                            (No Result)
+                        </span>
+                    </h5>
+
+                    <h5>
+                        Output on 
+
+                        <b>
+                            Mobilenet Model
+                        </b>
+                        - 
+                        <span>
+                            bobsled, bobsleigh, bob
+                        </span>
+                    </h5>
+
+                    <div class="result">
+                        <h4>
+                            Result - 
+                        </h4>
+                        <span>
+                            <b>NONE OF THEM ARE ACCURATE!</b>
+                    </div>
+
+                    <br>
+
+                    <li>
+                        <b>
+                            Test Image - 
+                        </b>
+
+                        <img src="glasses.jpg" class="img-responsive">
+                        <h2>Eye Glasses</h2>
+                    </li>
+
+                    <h5>
+                        Output on 
+
+                        <b>
+                            Google Images
+                        </b>
+
+                        -
+
+                        <span>
+                            eyeglass style
+                        </span>
+                    </h5>
+
+                    <h5>
+                        Output on 
+
+                        <b>
+                            Mobilenet Model
+                        </b>
+                        - 
+                        <span>
+                            swing
+                        </span>
+                    </h5>
+
+                    <div class="result">
+                        <h4>
+                            Result - 
+                        </h4>
+
+                        <span>
+                            <b>Google Images </b>
+
+                            is more accurate than
+
+                            <b> Mobilenet</b>
+                    </div>
+
+                    <br>
+
+                    <li>
+                        <b>
+                            Test Image - 
+                        </b>
+
+                        <img src="chair.jpg" class="img-responsive">
+                        <h2>Chair</h2>
+                    </li>
+
+                    <h5>
+                        Output on 
+
+                        <b>
+                            Google Images
+                        </b>
+
+                        -
+
+                        <span>
+                            Furniture style
+                        </span>
+                    </h5>
+
+                    <h5>
+                        Output on 
+
+                        <b>
+                            Mobilenet Model
+                        </b>
+                        - 
+                        <span>
+                            Rocker chair, rocker
+                        </span>
+                    </h5>
+
+                    <div class="result">
+                        <h4>
+                            Result - 
+                        </h4>
+                        <span>
+                            <b>Both are equally accurate!</b>
+                        </span>
+                    </div>
+
+                    <br>
+
+                    <li>
+                        <b>
+                            Test Image - 
+                        </b>
+
+                        <img src="bedsheet.jpg" class="img-responsive">
+                        <h2>Bedsheet</h2>
+                    </li>
+
+                    <h5>
+                        Output on 
+
+                        <b>
+                            Google Images
+                        </b>
+
+                        -
+
+                        <span>
+                            Handbag Style
+                        </span>
+                    </h5>
+
+                    <h5>
+                        Output on 
+
+                        <b>
+                            Mobilenet Model
+                        </b>
+                        - 
+                        <span>
+                            apron
+                        </span>
+                    </h5>
+
+                    <div class="result">
+                        <h4>
+                            Result - 
+                        </h4>
+                        <span>
+                            <b>NONE OF THEM ARE ACCURATE! </b>
+                    </div>
+                </div>
+            </ol>
+
+            <h1>
+                <b>
+                    I have tested images.
+                    <br>
+                    Mobilenet has predicted 2 of them correctly. And Google Images has predicted 2 of them correctly.
+                    <br>
+                    So according to my Case Study, Both of them are Equally accurate.
+                </b>
+            </h1>
+        </center>
+    </body>
+</html>
